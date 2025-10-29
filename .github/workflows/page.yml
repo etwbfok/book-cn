@@ -64,6 +64,7 @@ jobs:
         cargo run --bin lfp src
     - name: Validate references
       run: bash ci/validate.sh
+      
   deploy:
     if: ${{ github.ref == 'refs/heads/master' }}
     name: Deploy
